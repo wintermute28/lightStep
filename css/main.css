@@ -834,6 +834,8 @@ ul li {
 }
 .rules-descr p {
   color: #2d3033;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .no-scroll {
