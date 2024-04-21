@@ -8,11 +8,17 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Легкий шаг</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -34,7 +40,7 @@
                     <ul class="primary-nav">
                         <li ><a href="#features" >О нас</a></li>
                         <li><a href="#works">Наши работы</a></li>
-                        <li><a href="#teams">Услуги</a></li>
+                        <li><a href="#teams">Прайс-лист</a></li>
                         <li><a href="#testimonials">Отзывы</a></li>
                         <li><a href="#download">Контакты</a></li>
                         <li><a href="#rules">Правила посещения</a></li>
@@ -50,7 +56,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
 
                     <!-- 89773267809 -->
-                    <a href="https://wa.me/79773267809?text=Здравствуйте,%20хотел(а)%20бы%20записаться%20на%20сеанс." class="btn btn-large" style="background-color: white; color: black">Записаться</a>
+                    <a target="_blank" href="https://wa.me/79773267809?text=Здравствуйте,%20хотел(а)%20бы%20записаться%20на%20сеанс." class="btn btn-large" style="background-color: white; color: black">Записаться</a>
                 </div><!-- banner text -->
             </div>
         </div>
@@ -134,36 +140,38 @@
     </section><!-- features -->
 
     <section id="works" class="works section no-padding">
-
-        <h2 style="display: flex; justify-content: center; padding-bottom: 20px; flex-wrap: wrap;">Наши работы</h2>
-        <hr>
-        <div style="display: grid; grid-column-gap: 5px; grid-row-gap: 5px; justify-items: center;
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));">
-        <a data-fancybox="gallery" class="gl-img" href="images/work-1.jpg">
-            <img src="images/work-1-small.jpg">
-        </a>
-        <a data-fancybox="gallery" class="gl-img" href="images/work-2.jpg">
-            <img src="images/work-2-small.jpg">
-        </a>
-        <a data-fancybox="gallery" class="gl-img" href="images/work-3.jpg">
-            <img src="images/work-3-small.jpg">
-        </a>
-        <a data-fancybox="gallery" class="gl-img" href="images/work-4.jpg">
-            <img src="images/work-4-small.jpg">
-        </a>
-        <a data-fancybox="gallery" class="gl-img" href="images/work-5.jpg">
-            <img src="images/work-5-small.jpg">
-        </a>
+        <div class="container">
+            <h2 style="display: flex; justify-content: center; padding-bottom: 20px; flex-wrap: wrap;">Наши работы</h2>
+            <hr>
+            <div style="display: grid; grid-column-gap: 5px; grid-row-gap: 5px; justify-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));">
+                <a data-fancybox="gallery" class="gl-img" href="images/work-1.jpg">
+                    <img src="images/work-1-small.jpg">
+                </a>
+                <a data-fancybox="gallery" class="gl-img" href="images/work-2.jpg">
+                    <img src="images/work-2-small.jpg">
+                </a>
+                <a data-fancybox="gallery" class="gl-img" href="images/work-3.jpg">
+                    <img src="images/work-3-small.jpg">
+                </a>
+                <a data-fancybox="gallery" class="gl-img" href="images/work-4.jpg">
+                    <img src="images/work-4-small.jpg">
+                </a>
+                <a data-fancybox="gallery" class="gl-img" href="images/work-5.jpg">
+                    <img src="images/work-5-small.jpg">
+                </a>
+            </div>
         </div>
+
 
 
     </section><!-- works -->
 
     <section id="teams" class="section teams">
         <div class="container">
-            <h2 style="display: flex; justify-content: center; padding-bottom: 20px;">Услуги</h2>
+            <h2 style="display: flex; justify-content: center; padding-bottom: 20px;">Прайс-лист</h2>
             <hr>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="person">
                         <img src="images/team-1.jpg" alt="" class="img-responsive">
@@ -172,14 +180,8 @@
                             <h5 class="role">Цена: 50 000 ₽</h5>
                             <p>Гигиеническая процедура, улучшающая ноги и ногти, предусматривающая обрезной способ обработки стоп и ногтей. Этот вид педикюра стоял у истоков зарождения самой услуги, так как именно с него и начал развиваться профессиональный уход за ногами.</p>
                         </div>
-                        <!-- <ul class="social-icons clearfix">
-                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                        </ul> -->
-                    </div><!-- person -->
+
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="person">
@@ -189,14 +191,8 @@
                             <h5 class="role">Цена: 50 000 ₽</h5>
                             <p>Представляет собой сочетание обрезного и аппаратного вида воздействия. То есть ножки во время процедуры обрабатываются и педикюрным аппаратом и инструментами. Это позволяет быстро и качественно сделать кожу и ногти ухоженными. </p>
                         </div>
-                        <!-- <ul class="social-icons clearfix">
-                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
-                        </ul> -->
-                    </div><!-- person -->
+
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="person">
@@ -206,14 +202,8 @@
                             <h5 class="role">Цена: 50 000 ₽</h5>
                             <p>Механическая процедура по уходу за ногтями на пальцах ног, а также за кожей стопы. Главная особенность и ее отличие от классического маникюра в том, что здесь не используется вода и средства для размягчения кожи – все выполняется аппаратом. Это делает его гораздо более безопасным и приятным для человека. Аппарат убирает натоптыши, мозоли (в т.ч. и сухие) с кожи стопы и пальцев, полирует ногтевые пластины, валики и кутикулы, подравнивает ногти</p>
                         </div>
-                        <!-- <ul class="social-icons clearfix">
-                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
-                        </ul> -->
-                    </div><!-- person -->
+
+                    </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="person">
@@ -223,16 +213,176 @@
                             <h5 class="role">Цена: 50 000 ₽</h5>
                             <p> Обработка стопы, лечение ногтей. В ходе осмотра опытный врач подолог устраняет внешние проявления и диагностирует внутренние причины происхождения заболеваний. Аппаратный медицинский педикюр состоит из целого комплекса процедур по уходу за кожей и ногтями ног.</p>
                         </div>
-                        <!-- <ul class="social-icons clearfix">
-                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
-                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
-                        </ul> -->
-                    </div><!-- person -->
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="accordionn">Маникюр</div>
+                <div class="panel">
+                <div>
+                    <p>Маникюр женский (аппаратный, комбинированный, классический)</p>
+                    <p style="color: #f26271;">800 ₽</p>
+                </div>
+                <div>
+                    <p>Маникюр мужской (аппаратный, комбинированный, классический)</p>
+                    <p style="color: #f26271;">1000 ₽</p>
+                </div>
+                <div>
+                    <p>Маникюр детский (до 12 лет, необрезной)</p>
+                    <p style="color: #f26271;">600 ₽</p>
+                </div>
+                <div>
+                    <p>Придание формы ногтям (без маникюра)</p>
+                    <p style="color: #f26271;">200 ₽</p>
                 </div>
             </div>
+ 
+            <div class="accordionn">Педикюр</div>
+                <div class="panel">
+                    <div>
+                        <p>Педикюр женский (аппаратный, комбинированный, классический)</p>
+                        <p style="color: #f26271;">1500 ₽</p>
+                    </div>
+                    <div>
+                        <p>Обработка пальцев (без стоп)</p>
+                        <p style="color: #f26271;">1200 ₽</p>
+                    </div>
+                    <div>
+                        <p>Обработка стоп (без пальцев)</p>
+                        <p style="color: #f26271;">1200 ₽</p>
+                    </div>
+                    <div>
+                        <p>Педикюр мужской (аппаратный, комбинированный, классический)</p>
+                        <p style="color: #f26271;">1800 ₽</p>
+                    </div>
+                    <div>
+                        <p>Педикюр детский (до 12 лет)</p>
+                        <p style="color: #f26271;">800 ₽</p>
+                    </div>
+                    <div>
+                        <p>Удаление натоптышей (один натоптыш)</p>
+                        <p style="color: #f26271;">100 ₽</p>
+                    </div>
+                    <div>
+                        <p>Удаление гиперенратоза на пятках (уплотнения, наросты; одна пятка)</p>
+                        <p style="color: #f26271;">300 ₽</p>
+                    </div>
+            </div>
+ 
+            <div class="accordionn">Покрытие</div>
+                <div class="panel">
+                    <div>
+                        <p>Гель-лак</p>
+                        <p style="color: #f26271;">800 ₽</p>
+                    </div>
+                    <div>
+                        <p>Френч</p>
+                        <p style="color: #f26271;">500 ₽</p>
+                    </div>
+                    <div>
+                        <p>Лак(стойкий)</p>
+                        <p style="color: #f26271;">500 ₽</p>
+                    </div>
+                    <div>
+                        <p>Топ матовый</p>
+                        <p style="color: #f26271;">200 ₽</p>
+                    </div>
+                    <div>
+                        <p>Топ с шимиром</p>
+                        <p style="color: #f26271;">300 ₽</p>
+                    </div>
+                    <div>
+                        <p>Лечебный лак</p>
+                        <p style="color: #f26271;">300 ₽</p>
+                    </div>
+                    <div>
+                        <p>Лечебное покрытие IBX</p>
+                        <p style="color: #f26271;">500 ₽</p>
+                    </div>
+            </div>
+
+            <div class="accordionn">Снятие покрытия</div>
+                <div class="panel">
+                    <div>
+                        <p>Снятие лака</p>
+                        <p style="color: #f26271;">200 ₽</p>
+                    </div>
+                    <div>
+                        <p>Снятие гель-лака</p>
+                        <p style="color: #f26271;">300 ₽</p>
+                    </div>
+                    <div>
+                        <p>Снятие наращенных ногтей</p>
+                        <p style="color: #f26271;">500 ₽</p>
+                    </div>
+            </div>
+
+            <div class="accordionn">Укрепление ногтей</div>
+                <div class="panel">
+                    <div>
+                        <p>Акриловой пудрой</p>
+                        <p style="color: #f26271;">500 ₽</p>
+                    </div>
+                    <div>
+                        <p>Полигелем</p>
+                        <p style="color: #f26271;">1000 ₽</p>
+                    </div>
+                    <div>
+                        <p>База коучук + топ</p>
+                        <p style="color: #f26271;">700 ₽</p>
+                    </div>
+            </div>
+
+            <div class="accordionn">Наращивание ногтей</div>
+                <div class="panel">
+                    <div>
+                        <p>Наращивание (маникюр + наращивание + покрытие)</p>
+                        <p style="color: #f26271;">2800 ₽</p>
+                    </div>
+                    <div>
+                        <p>Коррекция наращенных ногтей (снятие покрытия + коррекция + маникюр + покрытие)</p>
+                        <p style="color: #f26271;">2600 ₽</p>
+                    </div>
+                    <div>
+                        <p>Наращивание одного ногтя</p>
+                        <p style="color: #f26271;">200 ₽</p>
+                    </div>
+                    <div>
+                        <p>Донаращивание углов (один ноготь)</p>
+                        <p style="color: #f26271;">200 ₽</p>
+                    </div>
+            </div>
+
+            <div class="accordionn">Дизайн</div>
+                <div class="panel">
+                    <div>
+                        <p>Роспись (один ноготь)</p>
+                        <p style="color: #f26271;">от 150-300 ₽</p>
+                    </div>
+                    <div>
+                        <p>Втирка (десять ногтей)</p>
+                        <p style="color: #f26271;">700 ₽</p>
+                    </div>
+                    <div>
+                        <p>Фольга (один ноготь)</p>
+                        <p style="color: #f26271;">150 ₽</p>
+                    </div>
+                    <div>
+                        <p>Паутинка (один ноготь)</p>
+                        <p style="color: #f26271;">100 ₽</p>
+                    </div>
+                    <div>
+                        <p>Стразы (один ноготь)</p>
+                        <p style="color: #f26271;">100 ₽</p>
+                    </div>
+                    <div>
+                        <p>Блестки (один ноготь)</p>
+                        <p style="color: #f26271;">50 ₽</p>
+                    </div>
+            </div>
+
+
+
         </div>
     </section><!-- teams -->
     <h2 style="display: flex; justify-content: center; padding-bottom: 20px;">Отзывы</h2>
@@ -250,9 +400,9 @@
                             </div>
                             <div class="col-md-6">
                                 <blockquote>
-                                    <p>"Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam..."
+                                    <p>"Когда записалась к Виктории не думала что будет так, замечательно, она профессионал и знает свою работу, без боли и достаточно быстро она сделала свою работу я осталась очень довольна, планирую ещё посещения к ней, очень рекомендую, специалист с большой буквы, желаю ей здоровья и успехов в работе."
                                     </p>
-                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                    <cite class="author">Валентина, 4 июня 2022</cite>
                                 </blockquote>
                             </div>
                         </li>
@@ -264,15 +414,22 @@
                             </div>
                             <div class="col-md-6">
                                 <blockquote>
-                                    <p>"Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur...."
+                                    <p>"Виктория настоящий профессионал своего дела! Сделала Аппаратный маникюр и педикюр, всё чисто, аккуратно, учтя все мои пожелания, носится прекрасно без сколов и заусенец😍 Я довольна!!!! Так же Виктория объяснила мне особенности моей стопы и дала необходимые рекомендации, обязательно приду ещё!"
                                     </p>
-                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                    <cite class="author">Юлия Владимировна, 24 августа 2020</cite>
                                 </blockquote>
                             </div>
                         </li>
                     </ul>
                 </div><!-- flexslider -->
             </div>
+            <hr>
+            <a
+                style="margin-bottom: 10px; font-weight: bold; color: white; text-decoration: none;"
+                target="_blank"
+                href="https://profi.ru/profile/KobozevaVV/?ysclid=lv9iaozy80307041241">
+                    Больше отзывов на PROFI.RU
+                </a><br><br>
         </div>
     </section><!-- testimonials -->
 
@@ -293,8 +450,9 @@
                 </div>
                 <div class="footer-col col-md-6">
                     <h4 style="color: #f1828e";">Социальные сети:</h4>
-                    <a href="https://wa.me/79773267809"><img width="50px" src="./icons/wa.png" alt="whatsApp"></a>
-                    <a href="https://t.me/+79773267809"><img width="50px" src="./icons/tg.png" alt="telegram"></i></a>
+                    <a target="_blank" href="https://wa.me/79773267809"><img width="50px" src="./icons/wa.png" alt="whatsApp"></a>
+                    <a target="_blank" href="https://t.me/+79773267809"><img width="50px" src="./icons/tg.png" alt="telegram"></i></a>
+                    <!-- <a target="_blank" href="https://profi.ru/profile/KobozevaVV/?ysclid=lv9iaozy80307041241"><img width="50px" src="./icons/profi.png" alt="profi"></i></a> -->
                 </div>
             </div>
         </div>
@@ -311,14 +469,14 @@
                         <p><strong>ВНИМАНИЕ!</strong> Гарантия не распространяется на следующие услуги:</p>
                         <ul>
                             <li><p> - маникюр с покрытием лечебным или цветным лаком;</p></li>
-                            <li><p> - на покрытие гель-лаком без без маникюра;</p></li>
+                            <li><p> - на покрытие гель-лаком без маникюра;</p></li>
                         </ul>
                         <p>В случае вашего опоздания более, чем на <strong>15 минут</strong>, услуга может быть выполнена не полностью.</p>
                         <p>Для клиентов не пришедших более двух раз, также отменивших запись менее, чем за <strong>3 часа</strong> до процедуры, начинает действовать предоплаты в размере <strong>50%</strong> от услуги.</p>
                     </div>
                     <div style="background-color: #ffd1d6; width: 70%; margin: 0 auto; padding: 10px 5px;">
                         <p style="color: #2d3033; font-weight: bold;">Я принимаю правила посещения салона и хочу записаться</p>
-                        <a href="https://wa.me/79773267809?text=Здравствуйте,%20хотел(а)%20бы%20записаться%20на%20сеанс." class="btn btn-large" style="background-color: white; color: black">Записаться</a>
+                        <a target="_blank" href="https://wa.me/79773267809?text=Здравствуйте,%20хотел(а)%20бы%20записаться%20на%20сеанс." class="btn btn-large" style="background-color: white; color: black">Записаться</a>
                     </div>
                     <br>
                 </div>  
@@ -338,7 +496,7 @@
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/retina.min.js"></script>
+    <!-- <script src="js/retina.min.js"></script> -->
     <script src="js/modernizr.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
