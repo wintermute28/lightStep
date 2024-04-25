@@ -1,4 +1,4 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1136px) {
   #header .header-content {
     width: 90%; }
 
@@ -72,7 +72,14 @@
   .banner-text {
     padding-top: 45%; }
     .banner-text h1 {
-      font-size: 32px; } }
+      font-size: 32px; }
+      .works-items {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        }
+        .works-items img {
+          width: 170px;
+        }
+   }
 @media screen and (max-width: 320px) {
   .banner-text {
     padding-top: 55%; }
