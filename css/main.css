@@ -903,3 +903,40 @@ ul li {
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
+
+#sale {
+  background-color: #ffd1d6;
+  padding-bottom: 20px;;
+}
+
+.sale-item {
+  background-color: white;
+  border-radius: 15px;
+  border: 5px dotted #f26271;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  width: 200px;
+
+}
+
+.sale-item h4 {
+  font-weight: bold;
+}
+.sale-item p {
+  color: #2d3033;
+}
+.sale-item span {
+  font-weight: bold;
+  color: #f26271;
+}
+
+@keyframes sale-img {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2);}
+  100% { transform: scale(1);}
+}
+
+#sale img {
+  margin-left: 10px;
+  animation: sale-img 4s infinite;
+}

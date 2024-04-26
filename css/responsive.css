@@ -72,13 +72,23 @@
   .banner-text {
     padding-top: 45%; }
     .banner-text h1 {
-      font-size: 32px; }
-      .works-items {
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        }
-        .works-items img {
-          width: 170px;
-        }
+      font-size: 32px;
+    }
+    .works-items {
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+    .works-items img {
+      width: 170px;
+    }
+    #sale .works-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #sale .sale-item {
+      width: 80%;
+    }
+
    }
 @media screen and (max-width: 320px) {
   .banner-text {
