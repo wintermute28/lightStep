@@ -884,6 +884,10 @@ ul li {
   text-align: left;
 }
 
+.panel div {
+  border-bottom: 1px solid #f26271;
+}
+
 
 
 .panel>div {
@@ -899,9 +903,20 @@ ul li {
 .works-items {
   display: grid;
   grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-row-gap: 20px;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+.works-items a {
+  border: 3px solid #f26271;
+  transition: all 0.5s;
+}
+.works-items a:hover {
+  filter:opacity(0.6);
+  
+}
+.works-items a:active {
+  filter:opacity(0.6);
 }
 
 #sale {
@@ -924,6 +939,7 @@ ul li {
 }
 .sale-item p {
   color: #2d3033;
+  font-size: 16px;
 }
 .sale-item span {
   font-weight: bold;
