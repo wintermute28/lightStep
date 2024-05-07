@@ -59,19 +59,17 @@ $(document).ready(function() {
 	$('.nav-toggle').on('click', function() {
 		$(this).toggleClass('close-nav');
 		nav.toggleClass('open');
-		// $('body').toggleClass('no-scroll');
+		$('body').toggleClass('no-scroll');
 		return false;
 	});	
 	nav.find('a').on('click', function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
-		// $('body').removeClass('no-scroll');
+		$('body').removeClass('no-scroll');
 	});
 });
 
-
-
-
+	// accordionn
 let acc = document.getElementsByClassName("accordionn");
 let i;
  

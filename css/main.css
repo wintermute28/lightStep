@@ -52,6 +52,9 @@ h5 {
 /* ==========================================================================
 	General Styles
 ========================================================================== */
+html {
+  scrollbar-gutter: stable;
+}
 a {
   color: #e84545; }
 
@@ -834,8 +837,8 @@ ul li {
 }
 .rules-descr p {
   color: #2d3033;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .no-scroll {
@@ -955,4 +958,33 @@ ul li {
 #sale img {
   margin-left: 10px;
   animation: sale-img 4s infinite;
+}
+
+/* blockquote */
+.blockquote-5 {
+  position: relative;
+  padding: 16px 24px;
+  margin: 16px 16px 26px 16px;    
+  font-size: 16px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.blockquote-5::after {
+  font-family: Times, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  content: "”";
+  color: white;
+  font-size: 160px;
+  line-height: 0;
+  bottom: -22px;
+  right: 30px;
+  text-shadow: 2px 0 0 white, -2px 0 0 white, 0 2px 0 white, 0 -2px 0 white, 1px 1px white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;    
+}
+.blockquote-5 cite {
+  color: white;
+  font-size: 15px;
+  padding-top: 10px;
+  display: block;
+  font-weight: bold;
 }

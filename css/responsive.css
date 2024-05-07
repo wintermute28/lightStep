@@ -89,6 +89,9 @@
     #sale .sale-item {
       width: 80%;
     }
+    .blockquote-5::after {
+      right: -30px;
+    }
 
    }
 @media screen and (max-width: 320px) {
