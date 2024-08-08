@@ -896,9 +896,21 @@ ul li {
 .panel>div {
   padding:6px 10px;
 }
-.panel>div>p {
+.panel__title {
   font-weight: bold;
   color: #2d3033;
+  margin-bottom: 3px;
+}
+
+.panel__descr {
+  margin-bottom: 3px;
+  color: gray;
+  font-weight: normal;
+}
+
+.panel__price {
+  font-weight: bold;
+  color: #f26271;
 }
 
 
