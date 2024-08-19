@@ -923,7 +923,9 @@ ul li {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 .works-items a {
-  border: 3px solid #f26271;
+  border: 2px solid #f26271;
+  border-radius: 10px;
+  overflow: hidden;
   transition: all 0.5s;
 }
 .works-items a:hover {
