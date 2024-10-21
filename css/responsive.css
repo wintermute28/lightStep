@@ -1,9 +1,11 @@
 @media screen and (max-width: 1136px) {
   #header .header-content {
-    width: 90%; }
+    width: 90%;
+  }
 
   .nav-toggle {
-    display: block; }
+    display: block;
+  }
 
   .navigation {
     position: fixed;
@@ -16,89 +18,148 @@
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-    transition: opacity 0.5s, visibility 0s 0.5s; }
-    .navigation .primary-nav {
-      position: relative;
-      top: 45%;
-      -moz-transform: translateY(-45%);
-      -ms-transform: translateY(-45%);
-      -webkit-transform: translateY(-45%);
-      transform: translateY(-45%); }
-    .navigation li {
-      display: block;
-      margin-bottom: 20px; }
-    .navigation a {
-      display: block;
-      font-size: 25px;
-      margin: 0;
-      text-align: center; }
+    transition: opacity 0.5s, visibility 0s 0.5s;
+  }
+  .navigation .primary-nav {
+    position: relative;
+    top: 45%;
+    -moz-transform: translateY(-45%);
+    -ms-transform: translateY(-45%);
+    -webkit-transform: translateY(-45%);
+    transform: translateY(-45%);
+  }
+  .navigation li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .navigation a {
+    display: block;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+  }
 
   .person {
-    margin: 0 auto 50px; }
-    .person-content {
-      text-align: center; }
-    .person .social-icons li {
-      display: inline-block;
-      float: none;
-      margin-bottom: 5px; }
+    margin: 0 auto 50px;
+  }
+  .person-content {
+    text-align: center;
+  }
+  .person .social-icons li {
+    display: inline-block;
+    float: none;
+    margin-bottom: 5px;
+  }
 
   .testimonials blockquote {
-    padding: 20px 5% 0; }
+    padding: 20px 5% 0;
+  }
   .testimonials p {
-    font-size: 26px; }
+    font-size: 26px;
+  }
 
   .flex-control-nav {
-    bottom: 20px; } }
+    bottom: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner-text {
-    padding-top: 30%; }
-    .banner-text h1 {
-      font-size: 42px; }
-    .banner-text p {
-      font-size: 18px; }
+    padding-top: 30%;
+  }
+  .banner-text h1 {
+    font-size: 42px;
+  }
+  .banner-text p {
+    font-size: 18px;
+  }
 
   .flexslider {
-    padding-bottom: 80px; }
+    padding-bottom: 80px;
+  }
 
   .flex-control-nav {
-    width: 100%; }
+    width: 100%;
+  }
+
+  #sale .works-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sale-item {
+    width: 400px;
+  }
 
   .footer .footer-col {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px;
+  }
+}
 @media screen and (max-width: 640px) {
   .banner-text {
-    padding-top: 35%; } }
+    padding-top: 35%;
+  }
+}
 @media screen and (max-width: 480px) {
   .banner-text {
-    padding-top: 45%; }
-    .banner-text h1 {
-      font-size: 32px;
-    }
-    .works-items {
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      grid-row-gap: 10px;
-    }
-    .works-items img {
-      width: 170px;
-    }
-    #sale .works-items {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #sale .sale-item {
-      width: 80%;
-    }
-    .blockquote-5::after {
-      right: -30px;
-    }
+    padding-top: 45%;
+  }
+  .banner-text h1 {
+    font-size: 32px;
+  }
+  .works-items {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-row-gap: 10px;
+  }
+  .works-items img {
+    width: 170px;
+  }
+  #sale .works-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #sale .sale-item {
+    width: 80%;
+  }
+  .blockquote-5::after {
+    right: -30px;
+  }
+}
 
-   }
+@media screen and (max-width: 400px) {
+  .works-items {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+  }
+
+  .works-items img {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .works-items {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+  }
+
+  .works-items img {
+    width: 120px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .banner-text {
-    padding-top: 55%; }
+    padding-top: 55%;
+  }
 
   .testimonials blockquote {
-    padding: 20px 5% 0; }
+    padding: 20px 5% 0;
+  }
   .testimonials p {
-    font-size: 26px; } }
+    font-size: 26px;
+  }
+}
