@@ -62,6 +62,11 @@
     bottom: 20px;
   }
 }
+@media screen and (max-width: 992px) {
+  .sale-item {
+    width: 350px;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner-text {
     padding-top: 30%;
@@ -88,11 +93,22 @@
   }
 
   .sale-item {
-    width: 400px;
+    width: 300px;
   }
 
   .footer .footer-col {
     margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .sale-item-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  .sale-item {
+    width: 400px;
   }
 }
 @media screen and (max-width: 640px) {

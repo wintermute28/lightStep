@@ -1146,6 +1146,13 @@ ul li {
   filter: opacity(0.6);
 }
 
+.sale-item-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
 #sale {
   background-color: #ffd1d6;
   padding-bottom: 20px;
@@ -1157,7 +1164,7 @@ ul li {
   border: 5px dotted #f26271;
   padding: 10px 10px 10px 10px;
   margin: 10px 10px 10px 10px;
-  width: 350px;
+  width: 400px;
 }
 
 .sale-item h4 {
@@ -1167,6 +1174,10 @@ ul li {
   color: #2d3033;
   font-size: 16px;
 }
+.sale-item a {
+  font-weight: bold;
+}
+
 .sale-item span {
   font-weight: bold;
   color: #f26271;
