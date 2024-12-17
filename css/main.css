@@ -314,7 +314,7 @@ ul li {
 	$Banner
 ========================================================================== */
 .banner {
-  background-image: url(../images/banner.webp);
+  background-image: url(../images/banner2.webp);
   background-position: center top;
   background-repeat: no-repeat;
   -moz-background-size: cover;
@@ -1134,16 +1134,18 @@ ul li {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 .works-items a {
-  border: 2px solid #f26271;
-  border-radius: 10px;
+  /* border: 2px solid #f26271; */
+  /* border-radius: 10px; */
   overflow: hidden;
   transition: all 0.5s;
+  box-shadow: 5px 3px 3px #f1828e;
 }
 .works-items a:hover {
   filter: opacity(0.6);
+  box-shadow: 7px 5px 5px #f26271;
 }
 .works-items a:active {
-  filter: opacity(0.6);
+  filter: opacity(0.8);
 }
 
 .sale-item-wrapper {
